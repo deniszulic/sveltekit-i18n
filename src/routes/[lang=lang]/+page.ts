@@ -8,8 +8,9 @@ export const load: PageLoad = async ({ parent }) => {
 	// you always need to create a new `i18nObject` instance in each `load` function
 	// to not run into shared server state issues
 	const LL = i18nObject(locale)
+	// console.log("ll", locale)
 
-	console.info(LL.log({ fileName: '+page.ts' }))
+	// console.info(LL.log({ fileName: '+page.ts' }))
 
 	return {
 		title: LL.title({ year: 2021 }),
