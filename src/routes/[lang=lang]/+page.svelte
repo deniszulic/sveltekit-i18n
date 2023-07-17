@@ -23,14 +23,15 @@
 	const day = new Date('2021-11-20')
 </script>
 
-<h2>
+<!-- <h2>
 	{$LL.welcome({ year: 2021 })}
 </h2>
 
 <h3>
 	{$LL.summit.schedule(day)}
-</h3>
+</h3> -->
 
 <div class="spectators">
 	<!-- {$LL.spectators(spectators)} -->
+	{$LL.logg.title()}
 </div>

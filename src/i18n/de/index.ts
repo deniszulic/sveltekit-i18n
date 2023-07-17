@@ -8,6 +8,7 @@ const de = {
 	// 	schedule: '{0|simpleDate}',
 	// },
 	// log: `Dieses Logging wurde von '{fileName}' aufgerufen`,
+	logg: { title: "mein kampf" }
 } satisfies Translation
 
 export default de

@@ -8,6 +8,7 @@ const it = {
 	// 	schedule: '{0|simpleDate}',
 	// },
 	// log: `Questa protocollazione è stata chiamata da '{fileName}'`,
+	logg: { title: "ma che koza"}
 } satisfies Translation
 
 export default it
