@@ -7,8 +7,9 @@ const it = {
 	// summit: {
 	// 	schedule: '{0|simpleDate}',
 	// },
-	// log: `Questa protocollazione è stata chiamata da '{fileName}'`,
-	logg: { title: "ma che koza"}
+	log: `Questa protocollazione è stata chiamata da '{fileName}'`,
+	logg: { title: "ma che koza"},
+	firstParam: 'itblog, a'
 } satisfies Translation
 
 export default it

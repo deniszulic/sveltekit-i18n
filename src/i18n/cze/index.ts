@@ -7,8 +7,9 @@ const cze = {
   // summit: {
   // 	schedule: '{0|simpleDate}',
   // },
-  // log: `Dieses Logging wurde von '{fileName}' aufgerufen`,
+  log: `Dieses Logging wurde von '{fileName}' aufgerufen`,
   logg: { title: "gnjec gnjec" },
+  firstParam: 'czblog, a'
 } satisfies Translation;
 
 export default cze;

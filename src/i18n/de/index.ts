@@ -7,8 +7,9 @@ const de = {
 	// summit: {
 	// 	schedule: '{0|simpleDate}',
 	// },
-	// log: `Dieses Logging wurde von '{fileName}' aufgerufen`,
-	logg: { title: "mein kampf" }
+	log: `Dieses Logging wurde von '{fileName}' aufgerufen`,
+	logg: { title: "mein kampf" },
+	firstParam: 'deblog, a'
 } satisfies Translation
 
 export default de

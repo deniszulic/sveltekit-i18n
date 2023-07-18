@@ -7,8 +7,9 @@ const en = {
 	// summit: {
 	// 	schedule: '{0:Date|simpleDate}',
 	// },
-	// log: `This log was called from '{fileName:string}'`,
-	logg: { title: "bri ish" }
+	log: `This log was called from '{fileName:string}'`,
+	logg: { title: "bri ish" },
+	firstParam: 'blog, banana'
 } satisfies BaseTranslation
 
 export default en
