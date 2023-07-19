@@ -15,6 +15,7 @@ export const load: PageLoad = async ({ parent, params }) => {
   // let bigoof = loadComponent();
   let bigoof;
   const { locale } = await parent();
+  let sussy = { haha: "uwu" };
 
   // const LL = i18nObject(locale);
   // console.log("LL", LL);
@@ -35,5 +36,6 @@ export const load: PageLoad = async ({ parent, params }) => {
   return {
     // loadComponent,
     bigoof,
+    sussy,
   };
 };
