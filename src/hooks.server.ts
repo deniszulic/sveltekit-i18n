@@ -11,7 +11,7 @@ loadAllLocales();
 const L = i18n();
 
 export const handle: Handle = async ({ event, resolve }) => {
-  console.log(event.url.pathname);
+  // console.log(event.url.pathname);
   // read language slug
   const [, lang] = getPathnameWithoutBase(event.url).split("/");
 
@@ -30,16 +30,22 @@ export const handle: Handle = async ({ event, resolve }) => {
   event.locals.locale = locale;
   event.locals.LL = LL;
 
-  const splittedPath = event.url.pathname.split("/");
+  const splitted: Array<string> = event.url.pathname.split("/")
+  const splittedPath: string = splitted.at(-1) || '';
   let allLinks = LL.firstParam()
     .split(",")
     .map((o: string) => o.trim());
 
-  if (!allLinks.includes(splittedPath[2])) throw error(404, "Ligma");
+  // console.log("aa",splittedPath.at(-1))
+  // One way
+  // if (!allLinks.includes(splittedPath) && splitted[1] !== locale) throw error(404, "Page not found!!");
+  
+  // better check
+  if (!allLinks.includes(splittedPath) || !isLocale(lang)) throw error(404, "Page not found!!");
 
-  if (splittedPath.length === 3) {
-    // console.log("omg:" + LL.logg.title());
-  }
+  // if (splittedPath.length === 3) {
+  //   // console.log("omg:" + LL.logg.title());
+  // }
 
   console.info(LL.log({ fileName: "hooks.server.ts" }));
 
