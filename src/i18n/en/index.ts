@@ -9,7 +9,7 @@ const en = {
 	// },
 	log: `This log was called from '{fileName:string}'`,
 	logg: { title: "bri ish" },
-	firstParam: '/blog, /banana'
+	firstParam: '/blog, /banana, /omg/uwu'
 } satisfies BaseTranslation
 
 export default en

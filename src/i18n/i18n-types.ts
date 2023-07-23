@@ -28,7 +28,7 @@ type RootTranslation = {
 		title: string
 	}
 	/**
-	 * /​b​l​o​g​,​ ​/​b​a​n​a​n​a
+	 * /​b​l​o​g​,​ ​/​b​a​n​a​n​a​,​ ​/​o​m​g​/​u​w​u
 	 */
 	firstParam: string
 }
@@ -45,7 +45,7 @@ export type TranslationFunctions = {
 		title: () => LocalizedString
 	}
 	/**
-	 * /blog, /banana
+	 * /blog, /banana, /omg/uwu
 	 */
 	firstParam: () => LocalizedString
 }
