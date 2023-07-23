@@ -9,7 +9,7 @@ const de = {
 	// },
 	log: `Dieses Logging wurde von '{fileName}' aufgerufen`,
 	logg: { title: "mein kampf" },
-	firstParam: 'deblog, a'
+	firstParam: '/deblog, /a'
 } satisfies Translation
 
 export default de

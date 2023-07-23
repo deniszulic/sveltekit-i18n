@@ -9,7 +9,7 @@ const it = {
 	// },
 	log: `Questa protocollazione è stata chiamata da '{fileName}'`,
 	logg: { title: "ma che koza"},
-	firstParam: 'itblog, a'
+	firstParam: '/itblog, /a'
 } satisfies Translation
 
 export default it

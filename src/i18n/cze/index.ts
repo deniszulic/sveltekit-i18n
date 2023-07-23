@@ -9,7 +9,7 @@ const cze = {
   // },
   log: `Dieses Logging wurde von '{fileName}' aufgerufen`,
   logg: { title: "gnjec gnjec" },
-  firstParam: 'czblog, a'
+  firstParam: '/czblog, /a'
 } satisfies Translation;
 
 export default cze;

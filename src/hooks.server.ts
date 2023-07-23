@@ -31,11 +31,11 @@ export const handle: Handle = async ({ event, resolve }) => {
   event.locals.LL = LL;
 
   const splitted: Array<string> = event.url.pathname.split("/")
-  const splittedPath: string = splitted.at(-1) || '';
+  const splittedPath: string = event.url.pathname.replace(`/${lang}`, '');
   let allLinks = LL.firstParam()
     .split(",")
     .map((o: string) => o.trim());
-
+  // console.log(event.url.pathname.replace(`/${lang}`, ''))
   // console.log("aa",splittedPath.at(-1))
   // One way
   // if (!allLinks.includes(splittedPath) && splitted[1] !== locale) throw error(404, "Page not found!!");
