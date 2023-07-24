@@ -30,8 +30,8 @@ export const handle: Handle = async ({ event, resolve }) => {
   event.locals.locale = locale;
   event.locals.LL = LL;
 
-  const splitted: Array<string> = event.url.pathname.split("/")
-  const splittedPath: string = event.url.pathname.replace(`/${lang}`, '');
+  const splitted: Array<string> = event.url.pathname.split("/");
+  const splittedPath: string = event.url.pathname.replace(`/${lang}`, "");
   let allLinks = LL.firstParam()
     .split(",")
     .map((o: string) => o.trim());
@@ -39,9 +39,10 @@ export const handle: Handle = async ({ event, resolve }) => {
   // console.log("aa",splittedPath.at(-1))
   // One way
   // if (!allLinks.includes(splittedPath) && splitted[1] !== locale) throw error(404, "Page not found!!");
-  
+
   // better check
-  if (!allLinks.includes(splittedPath) || !isLocale(lang)) throw error(404, "Page not found!!");
+  if ((!allLinks.includes(splittedPath) && splittedPath) || !isLocale(lang))
+    throw error(404, !isLocale(lang) ? "Lang not defined" : "Page not found!!");
 
   // if (splittedPath.length === 3) {
   //   // console.log("omg:" + LL.logg.title());
